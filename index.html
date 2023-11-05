@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
  
   <title>Hello World</title>
 </head>
 <body>
-  <a href="https://www.hwdsb.on.ca/saltfleet/">
-    <button type="button" class="Hero-Button">Link To My School</button>
-  </a>
   <header class="hero-box">
     <section class="hero-image-box">
       <img class="hero-image" src="images/Griffeth.jpg" alt="A black background of shapes">
@@ -25,7 +23,20 @@
 
   <!--begin portfolio-->
 
+<section class="portfolio-container">
+  <h1>Portfolio</h1>
+  <section class="portfolio-gallary">
+    <div class="gallary-item">
+      <a href="images/Griffeth.jpg" class = glightbox></a>
+    </div>
+  </section>
+</section>
+
   <!--end portfolio-->
+
+  <script src="js/glightbox.min.js"></script>
+  <script type="text/javascript">
+  const lightbox = GLightbox({ loop: true});</script>
 
 </body>
 </html>
